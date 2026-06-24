@@ -1,3 +1,15 @@
+body:has(.article-layout) .site-header {
+  display: none;
+}
+
+body:has(.article-layout) .article-layout {
+  padding-top: 44px;
+}
+
+body:has(.article-layout) .article-toc {
+  top: 24px;
+}
+
 .blog-hero {
   max-width: 900px;
   padding: 92px 0 42px;
@@ -286,6 +298,10 @@
     padding-top: 48px;
   }
 
+  body:has(.article-layout) .article-layout {
+    padding-top: 28px;
+  }
+
   .blog-card,
   .article-footer-card,
   .article-action,
@@ -299,6 +315,10 @@
     margin-bottom: 22px;
     padding: 12px;
     border-radius: 18px;
+  }
+
+  body:has(.article-layout) .article-toc {
+    top: 14px;
   }
 
   .inline-cta {
