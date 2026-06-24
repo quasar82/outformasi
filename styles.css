@@ -8,8 +8,6 @@
   --primary-dark: #3730a3;
   --accent: #10b981;
   --premium: #f59e0b;
-  --auth-red: #e11d48;
-  --auth-red-dark: #be123c;
   --dark: #0f172a;
   --shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
   --radius: 28px;
@@ -82,7 +80,7 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
   color: var(--muted);
   font-weight: 650;
 }
@@ -94,35 +92,41 @@ a {
 .auth-actions {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  padding: 4px;
+  gap: 6px;
+  padding: 2px;
+  border: 1px solid rgba(79, 70, 229, 0.16);
   border-radius: 12px;
-  background: var(--auth-red);
-  box-shadow: 0 14px 30px rgba(225, 29, 72, 0.24);
+  background: rgba(79, 70, 229, 0.06);
 }
 
 .auth-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 38px;
-  padding: 9px 18px;
+  min-height: 32px;
+  padding: 7px 12px;
   border-radius: 9px;
-  color: white !important;
-  font-weight: 900;
+  font-size: 0.88rem;
+  font-weight: 850;
   line-height: 1;
 }
 
+.auth-register {
+  color: var(--primary-dark) !important;
+}
+
 .auth-register:hover {
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(79, 70, 229, 0.08);
 }
 
 .auth-login {
-  background: var(--auth-red-dark);
+  color: white !important;
+  background: var(--primary);
+  box-shadow: 0 10px 22px rgba(79, 70, 229, 0.20);
 }
 
 .auth-login:hover {
-  background: #9f1239;
+  background: var(--primary-dark);
 }
 
 .nav-toggle {
@@ -621,12 +625,13 @@ h3 {
   .auth-actions {
     width: 100%;
     margin-top: 10px;
-    padding: 5px;
+    padding: 4px;
     border-radius: 14px;
   }
 
   .auth-link {
     flex: 1;
+    min-height: 36px;
   }
 
   .hero,
