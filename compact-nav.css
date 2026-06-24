@@ -1,0 +1,69 @@
+.site-header {
+  background: rgba(248, 250, 252, 0.86);
+}
+
+.nav {
+  height: 58px;
+}
+
+.brand {
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.brand-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  box-shadow: 0 10px 22px rgba(79, 70, 229, 0.22);
+}
+
+.nav-links {
+  gap: 16px;
+  font-size: 0.92rem;
+}
+
+.auth-actions {
+  gap: 4px;
+  padding: 2px;
+  border-radius: 12px;
+}
+
+.auth-link {
+  min-height: 30px;
+  padding: 6px 11px;
+  border-radius: 8px;
+  font-size: 0.83rem;
+}
+
+.auth-login {
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.18);
+}
+
+.nav-toggle {
+  padding: 7px 10px;
+  font-size: 1.05rem;
+}
+
+.hero {
+  min-height: calc(100vh - 58px);
+}
+
+.article-toc {
+  top: 58px;
+}
+
+@media (max-width: 860px) {
+  .nav-links {
+    top: 58px;
+  }
+
+  .auth-link {
+    min-height: 34px;
+  }
+
+  .article-toc {
+    top: 58px;
+  }
+}
