@@ -275,6 +275,79 @@ h3 {
   text-align: center;
 }
 
+.guide-section {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(248, 250, 252, 0.95)),
+    radial-gradient(circle at center left, rgba(16, 185, 129, 0.11), transparent 26rem);
+  border-top: 1px solid rgba(229, 231, 235, 0.8);
+  border-bottom: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.guide-card {
+  position: relative;
+  padding: 28px;
+  overflow: hidden;
+}
+
+.guide-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -40px -54px auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 999px;
+  background: rgba(79, 70, 229, 0.08);
+}
+
+.featured-guide {
+  border-color: rgba(16, 185, 129, 0.38) !important;
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.09), white) !important;
+}
+
+.guide-tag {
+  display: inline-flex;
+  margin-bottom: 16px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  color: #065f46;
+  background: rgba(16, 185, 129, 0.12);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.guide-steps {
+  display: grid;
+  gap: 8px;
+  margin: 20px 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.guide-steps span {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(248, 250, 252, 0.88);
+}
+
+.guide-link {
+  position: relative;
+  z-index: 1;
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.guide-link:hover {
+  color: var(--primary-dark);
+}
+
 .feature-grid,
 .artifact-grid {
   display: grid;
@@ -284,6 +357,7 @@ h3 {
 
 .feature-card,
 .artifact-grid article,
+.guide-card,
 .price-card,
 .split-card,
 .cta-card {
@@ -300,6 +374,7 @@ h3 {
 
 .feature-card p,
 .artifact-grid p,
+.guide-card p,
 .price-card p,
 .price-card li {
   color: var(--muted);
@@ -515,6 +590,7 @@ h3 {
   }
 
   .hero,
+  .guide-grid,
   .pricing-grid,
   .split-card {
     grid-template-columns: 1fr;
@@ -564,6 +640,7 @@ h3 {
 
   .cta-card,
   .split-card,
+  .guide-card,
   .price-card {
     padding: 24px;
   }
