@@ -1,3 +1,12 @@
+const compactNavHref = new URL("compact-nav.css", document.currentScript?.src || window.location.href).href;
+
+if (!document.querySelector(`link[href="${compactNavHref}"]`)) {
+  const compactNavStyles = document.createElement("link");
+  compactNavStyles.rel = "stylesheet";
+  compactNavStyles.href = compactNavHref;
+  document.head.appendChild(compactNavStyles);
+}
+
 const navToggle = document.querySelector("#navToggle");
 const navLinks = document.querySelector("#navLinks");
 const form = document.querySelector("#waitlistForm");
