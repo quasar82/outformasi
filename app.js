@@ -1,4 +1,4 @@
-const BRAND_NAME = "OutFormasi";
+const BRAND_NAME = "TAR";
 const OLD_BRAND_NAME = "Rilsult";
 
 function replaceBrandText(root = document.body) {
@@ -20,7 +20,7 @@ function replaceBrandText(root = document.body) {
   });
 
   document.querySelectorAll(".brand-mark").forEach((mark) => {
-    mark.textContent = "O";
+    mark.textContent = "T";
   });
 
   document.querySelectorAll('meta[name="description"]').forEach((meta) => {
